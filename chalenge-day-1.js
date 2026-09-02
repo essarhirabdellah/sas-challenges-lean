@@ -1,18 +1,18 @@
 //day one
 //level one
 //using while loop print from 1 to 20
-let a = 1;
+ let a = 1;
 while (a <= 20 ){
-  console.log(a);
-  a++;
-  }
+   console.log(a);
+   a++;
+   }
 //sum of number
 for(let z = 1 ; z <=100 ; z++){
-  //updat the value
+//   //updat the value
   
   //print the value
   console.log(z + z);
-  }
+  } 
 //table of multiplication of number 5
 let num1 = 5;
 let result = 0;
@@ -85,27 +85,30 @@ while (o <= 50){
 }
 //build a tirngle
 
-let s = 0;
-let d = 1;
+let nbrEtoil = 1;
+let nbrEspace = 4;
+// let space = " ";
+// let t_star = "*";
 for(let p = 0 ; p < 5 ; p++){
-  let space = " ";
-  let t_star = "*";
   let line = "";
   //building one line
-  while(s <= 4){
-    line += space;
-    s++;
+  let s1 = 0;
+  while(s1 < nbrEspace){
+    line += " ";
+    s1++;
   }
-  console.log(s + d == 5)
-  while(s + d == 5){
-    line += t_star;
-    d++; 
+  
+  let d1 = 0
+  while(d1 < nbrEtoil){
+    line += "*";
+    d1++;
   }
   console.log(line)
-  s--;
+  nbrEtoil++;
+  nbrEspace--;
 }
-//fibonacci 
-// o = 0;
-for (let f = 0, g = 1; f < 10 && g <= 10 ; g++ , f++){
-  console.log(f + g);
-}
+// //fibonacci 
+// // o = 0;
+// for (let f = 0, g = 1; f < 10 && g <= 10 ; g++ , f++){
+//   console.log(f + g);
+// }
