@@ -107,8 +107,8 @@ for(let p = 0 ; p < 5 ; p++){
   nbrEtoil++;
   nbrEspace--;
 }
-// //fibonacci 
-// // o = 0;
-// for (let f = 0, g = 1; f < 10 && g <= 10 ; g++ , f++){
-//   console.log(f + g);
-// }
+//fibonacci 
+// o = 0;
+for (let f = 0, g = 1; f < 10 && g <= 10 ; g++ , f++){
+  console.log(f + g);
+}
