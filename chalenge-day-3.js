@@ -78,3 +78,72 @@ function countChar(str, char){
     return num;
 }
 console.log(countChar(revers1, "a"));
+
+// level three
+
+//str2
+function uppper_first(phrase){
+    let str = "";
+    for(let i = 0; i < phrase.length; i++){
+        if (i == 0) {
+            str += phrase[i].toUpperCase();
+        }
+        else if (phrase[i] == " ") {
+            let b = i + 1;
+            let y = phrase[b].toUpperCase();
+            str += " " + y;
+            i++;
+        }
+        else{
+            str+=phrase[i];
+        } 
+    }
+    return str;
+}
+console.log(uppper_first("hi welcome"))
+
+// count litters
+function count_every(phrase) {
+    let count_str = "";
+    let x = 0;
+    let count = 1;
+    let index = phrase.length -1;
+    for(let i = 1 ; i <= index ; i++){
+
+        if (phrase[i] == phrase[x]) {
+            count++;
+        }
+        else if (phrase[i] != phrase[x]) {
+            count_str+=`${count}${phrase[x]}`;
+            count = 1;
+        } 
+        if (i == index) {
+          count_str+=`${count}${phrase[x]}`;
+          return count_str;
+     }
+        x++;
+    }
+}
+console.log(count_every("wooooww"));
+
+
+// argament chack
+
+function check_arg(word1,word2){
+  if (word1.length == word2.length) {
+    for (let i = 0; i < word1.length; i++) {
+        
+        if (word1[i] == word2[i]) {
+            console.log(`${word1[i]} == ${word2[i]}`);
+        }
+        else if(word1[i] != word2[i]) {
+            console.log(`${word1[i]} != ${word2[i]}`);
+        }
+        
+    }
+  }
+  else if (word1.length != word2.length) {
+    console.log("use the same words lenght");
+  }
+}
+check_arg("abdellah","abdullah")
