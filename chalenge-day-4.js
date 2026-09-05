@@ -62,3 +62,20 @@ function reverce_arr(arr){
     return new_one;
 }
 console.log(reverce_arr(arr_obj))
+
+//level three 2d array
+
+let array_2d = [["audi","BMW","vorswagne"],["alfa romie","frarie"],["RAM"],["toyotaS"]]
+function make_it_one(arr) {
+    let one_list = [] 
+    for(const list of arr){
+        for (const elm of list) {
+            one_list.push(elm);
+            
+        }
+
+    }
+    return one_list;
+}
+console.log(make_it_one(array_2d));
+
