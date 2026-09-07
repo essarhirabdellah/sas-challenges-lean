@@ -74,4 +74,30 @@ function check_pass(password,indm){
      }
 }
 
-console.log(check_pass("a&aaaaaaaa",8));
+console.log(check_pass("a&aaAaZaa",8));
+
+//chalnge 8
+let list_arr_nbr = [1,2,4,4,2,3];
+function filter_nbr_one(list) {
+    let empty = [];
+    let len = list.length ;
+    let i = 0,x = 1;
+    while (i < len) {
+        if (list[i] != list[x]) {
+            empty.push(list[i]);
+        }
+        i++
+        x++
+    }
+    let i_was_lost = [];
+    let y = 1
+    for(const nbr of empty){
+       for (const nbr1 of empty ) { 
+        if (nbr !== nbr1) {
+            i_was_lost.push(nbr)
+        }
+       }
+    }
+    console.log(i_was_lost)
+}
+filter_nbr_one(list_arr_nbr);
